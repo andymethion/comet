@@ -1,0 +1,13 @@
+{
+  "name": "comet",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:website": "bun --filter @comet/website start",
+    "dev:server": "bun --filter @comet/server start:dev",
+    "build": "bun --filter '*' build"
+  }
+}
